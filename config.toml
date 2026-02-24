@@ -9,6 +9,7 @@ animation_duration_ms = 700
 animation_steps = 30
 backlight_path = "/sys/class/backlight/intel_backlight"
 brightness_threshold = 1.0
+sleep_seconds = 5
 
 [camera]
 capture_delay_ms = 100

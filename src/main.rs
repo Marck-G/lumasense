@@ -16,7 +16,6 @@ fn main() {
         }
     };
     
-    let sleep_seconds = 5;
     let mut last_brightness = 0.0;
     
     loop {
@@ -50,6 +49,6 @@ fn main() {
             debug!("Brightness difference {} < threshold {}, skipping update", brightness_diff, config.brightness.brightness_threshold);
         }
         
-        std::thread::sleep(Duration::from_secs(sleep_seconds));
+        std::thread::sleep(Duration::from_secs(config.brightness.sleep_seconds));
     }
 }

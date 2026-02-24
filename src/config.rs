@@ -27,6 +27,7 @@ pub struct BrightnessConfig {
     pub animation_steps: u32,
     pub backlight_path: String,
     pub brightness_threshold: f64,
+    pub sleep_seconds: u64,
 }
 
 impl Default for BrightnessConfig {
@@ -42,6 +43,7 @@ impl Default for BrightnessConfig {
             animation_steps: 20,
             backlight_path: "/sys/class/backlight/intel_backlight".to_string(),
             brightness_threshold: 5.0,
+            sleep_seconds: 5,
         }
     }
 }
