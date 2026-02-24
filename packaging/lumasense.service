@@ -1,0 +1,16 @@
+[Unit]
+Description=LumaSense - Automatic brightness control
+After=graphical-session.target
+Wants=graphical-session.target
+
+[Service]
+Type=simple
+User=%i
+ExecStart=/usr/bin/lumasense
+Restart=always
+RestartSec=3
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/%i/.Xauthority
+
+[Install]
+WantedBy=graphical-session.target

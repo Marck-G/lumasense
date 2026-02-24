@@ -1,0 +1,7 @@
+# Allow users in video group to control backlight
+SUBSYSTEM=="backlight", ACTION=="add", RUN+="/bin/chgrp video /sys/class/backlight/%k/brightness"
+SUBSYSTEM=="backlight", ACTION=="add", RUN+="/bin/chmod g+w /sys/class/backlight/%k/brightness"
+
+# Also set permissions for max_brightness
+SUBSYSTEM=="backlight", ACTION=="add", RUN+="/bin/chgrp video /sys/class/backlight/%k/max_brightness"
+SUBSYSTEM=="backlight", ACTION=="add", RUN+="/bin/chmod g+r /sys/class/backlight/%k/max_brightness"
