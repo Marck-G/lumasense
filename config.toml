@@ -1,0 +1,15 @@
+[brightness]
+min_ambient = 0.0
+max_ambient = 100.0
+min_brightness = 6.0
+max_brightness = 100.0
+low_ambient_multiplier = 0.5
+high_ambient_multiplier = 1.3
+animation_duration_ms = 700
+animation_steps = 30
+backlight_path = "/sys/class/backlight/intel_backlight"
+brightness_threshold = 1.0
+
+[camera]
+capture_delay_ms = 100
+device_index = 0
