@@ -1,0 +1,15 @@
+[package]
+name = "lumasense"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+homepage = "https://github.com/Marck-G/lumen-sense"
+description = "Automatic screen brightness adjustment based on ambient light conditions detected through your camera"
+
+[dependencies]
+tracing = "0.1"
+tracing-subscriber = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.9.8"
+nokhwa = { version = "0.10.10", features = ["output-wgpu", "input-native"] }
+dirs = "6.0.0"

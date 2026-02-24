@@ -1,0 +1,5 @@
+/target
+/tmp
+*.deb
+*.rpm
+*.tar.zst
